@@ -1,0 +1,13 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
+.page-footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 164px 1fr 164px;
+    gap: 16px;
+    margin-top: 58px;
+    margin-bottom: 55px;
+  }
+}

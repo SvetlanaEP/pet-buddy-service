@@ -1,0 +1,289 @@
+
+.accordion {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(135, 206, 235, 0.2);
+  transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+  background-color:   rgb(135, 206, 235, 0.5);
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+  overflow: hidden;
+}
+
+.faq {
+    padding: 100px 0 26px;
+
+}
+
+.team {
+  background-color: rgb(135, 206, 235, 0.3);
+    padding: 100px 0 26px;
+}
+
+.team__title {
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 0 40px;
+  text-transform: uppercase;
+}
+
+.team__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 38px 38px;
+
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team__item {
+  width: 320px;
+}
+
+.team__info {
+  margin: 10px 0 0;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+
+.footer {
+  background-color: #f9f9f9; /* Светлый фон */
+  color: #333; /* Темный текст */
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__container p {
+  margin-top: 0;
+}
+
+@media (max-width: 575px) {
+  .footer__container {
+    flex-direction: column;
+  }
+
+
+}
+
+.footer__contact,
+.footer__links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer__address,
+.footer__phone {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer__link {
+  color: $basic-color;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer__link:hover {
+  color: $hover-button;
+}
+
+.footer__link:active {
+  color: $active-button;
+}
+
+.footer__copyright {
+  flex: 1 100%;
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.catalog-header {
+  background-color: #f8f9fa;
+  padding: 240px 20px 40px;
+  text-align: center;
+  color: $text-color;
+}
+
+.service {
+  padding: 40px 0;
+}
+
+.catalog-header .button {
+  display: inline-block;
+  width: 250px;
+}
+
+.catalog-header__title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.catalog-header__subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.catalog-header__actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+/* General styles for guarantees and quality section */
+.guarantees-quality {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  text-align: center;
+  color: #333;
+}
+
+.guarantees-quality__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: $color-heading;
+  margin-bottom: 20px;
+}
+
+.guarantees-quality__text {
+  font-size: 1.125rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.guarantees-quality__list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.guarantees-quality__item {
+  font-size: 1rem;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.guarantees-quality__item:hover {
+  background-color: #e9ecef;
+}
+
+.pet-care-tips {
+  background-color: #f0f8ff; // Легкий фон для раздела
+  padding: 40px 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; // Для мобильных устройств отображаем один элемент на строку
+    }
+  }
+
+  &__item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__item-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+  }
+}
+
+.form__agree {
+  margin-top: 20px;
+
+
+}
+
+.form__link {
+  color: $basic-color;
+  text-decoration: none;
+}
+
+
+

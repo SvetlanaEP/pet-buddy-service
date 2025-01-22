@@ -1,0 +1,25 @@
+.page-header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+}
+
+.page-header__nav {
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 12px 8px;
+
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 16px 0;
+    grid-template-columns: 230px 1fr;
+  }
+}

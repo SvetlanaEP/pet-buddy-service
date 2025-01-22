@@ -1,0 +1,127 @@
+.promo {
+  color: $color-white;
+  text-align: center;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    margin-bottom: 0;
+
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: transparent;
+    position: relative;
+    color: $color-black;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -143px;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: -2;
+
+      background-color: $basic-color;
+      background-position: 0 30%;
+      background-repeat: no-repeat;
+    }
+
+  }
+}
+
+.promo__bg {
+  position: relative;
+  height: 100%;
+  background-color: rgb(135, 206, 235, 0.3);
+
+}
+
+.promo__bg-img {
+position: absolute; z-index: -1; top: 0; left: 0;
+  @media (min-width: $desktop-width) {
+  left: 50%;
+}
+}
+.promo__container {
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 28px 0;
+  height: 60vh;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 40% 200px 87px 87px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 230px 630px 85px 80px;
+    text-shadow: none;
+  }
+}
+
+.promo__heading {
+  display: block;
+  min-height: 72px;
+  margin: 0 0 25px;
+
+  font-family: $font-heading;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: $regular;
+
+  @media (min-width: $tablet-width) {
+    min-height: 120px;
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+.promo__text {
+  margin: 0 0 29px;
+
+  font-family: $font-heading;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: $regular;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+    width: 708px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: calc(50% - 114px);
+
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.promo__button {
+  text-shadow: none;
+  justify-self: end;
+
+  @media (min-width: $tablet-width) {
+    width: 55%;
+  }
+}

@@ -1,0 +1,18 @@
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+<!-- Фон логотипа -->
+<rect width="150" height="150" fill="#87CEEB" rx="20" />
+
+<!-- Контур лапки -->
+<circle cx="40" cy="75" r="12" fill="#FFFFFF" />
+<circle cx="60" cy="55" r="10" fill="#FFFFFF" />
+<circle cx="90" cy="55" r="10" fill="#FFFFFF" />
+<circle cx="110" cy="75" r="12" fill="#FFFFFF" />
+<circle cx="75" cy="95" r="18" fill="#FFFFFF" />
+
+<!-- Основной текст -->
+<text x="50%" y="140" fill="white" font-size="16" text-anchor="middle" font-family="Arial, sans-serif">
+  PetBuddy
+</text>
+</svg>

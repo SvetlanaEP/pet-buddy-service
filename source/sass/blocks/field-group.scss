@@ -1,0 +1,120 @@
+.field-group {
+  padding: 0;
+  border: none;
+}
+
+.field-group__heading {
+  position: relative;
+  font-family: $font-heading;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+
+  margin-bottom: 35px;
+  padding-right: 20px;
+
+  background-color: $color-white;
+
+  @media (max-width: $only-mobile-width) {
+    max-width: 190px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+    padding-right: 42px;
+    padding-left: 42px;
+    margin-left: -42px;
+  }
+}
+
+.field-group__decor {
+  position: relative;
+  z-index: -1;
+  height: 100px;
+  background-color: #919191;
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    height: 2px;
+    width: 110vw;
+
+    left: 0;
+    top: 20px;
+
+    background-color: $basic-color;
+
+    @media (min-width: $tablet-width) {
+      top: 24px;
+      left: -110px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+    }
+  }
+}
+
+.field-group__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.field-group__field {
+  margin-top: 25px;
+}
+
+.field-group__item {
+  & + & {
+    margin-top: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+}
+
+.field-group__list--additional {
+  margin-bottom: 35px;
+
+ .field-group__item + .field-group__item {
+   margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+}
+
+.field-group__list {
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 78px;
+  }
+}
+
+.field-group__list--additional {
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+    row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 81px;
+  }
+
+}

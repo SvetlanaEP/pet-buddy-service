@@ -1,0 +1,39 @@
+.button {
+  display: inline-block;
+  padding: 11px 0;
+  text-align: center;
+
+  width: 100%;
+
+  font-family: $font-heading;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-white;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+
+  background-color: $basic-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+
+    padding: 13px 0;
+  }
+
+  &:hover {
+    background-color: $hover-button;
+  }
+
+  &:active {
+    background-color: $active-button;
+    transform: scale(0.98);
+  }
+}
+
+.button--disabled {
+  background-color: $basic-grey;
+  color: $dark-grey;
+}

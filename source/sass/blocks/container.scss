@@ -1,0 +1,25 @@
+.container {
+  width: 87.5%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 92.2%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.container--form {
+
+  @media (min-width: $tablet-width) {
+    width: 82%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+
+}
